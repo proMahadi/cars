@@ -7,7 +7,14 @@ module.exports = {
   ],
   theme: {
     extend: {
+      maxWidth: {
+        container: '1920px',
+      },
       colors: {
+        teal:"#00c3cc",
+        dark:"#0000",
+        light:"#ffff",
+        gray:"#ebedef",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
