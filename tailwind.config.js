@@ -12,7 +12,6 @@ module.exports = {
       },
       colors: {
         teal:"#00c3cc",
-        dark:"#0000",
         light:"#ffff",
         gray:"#ebedef",
         border: "hsl(var(--border))",
