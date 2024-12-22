@@ -2,7 +2,7 @@ import { Outlet } from "react-router"
 import Navbar from "../shared/Navbar"
 
 
-const BasicLayout = () => {
+const BasicLayout: React.FC = () => {
   return (
     <>
     <header>

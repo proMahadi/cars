@@ -1,7 +1,7 @@
 import App from "../App";
 import { BrowserRouter, Route, Routes } from "react-router";
 
-const RouterApp = () => {
+const RouterApp:React.FC = () => {
   return (
     <>
       <BrowserRouter>

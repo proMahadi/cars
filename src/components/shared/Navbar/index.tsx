@@ -1,10 +1,10 @@
 import logo from "@/assets/logo.svg";
 import { CiSearch } from "react-icons/ci";
 import { HiOutlineBars3CenterLeft } from "react-icons/hi2";
-import { navData } from "@/data/navData";
+import { infoData, navData } from "@/data/navData";
 import { Link } from "react-router";
 
-const Navbar = () => {
+const Navbar: React.FC = () => {
   return (
     <nav>
       <div className="h-[8px] w-full bg-teal" />
@@ -25,11 +25,20 @@ const Navbar = () => {
           <div className="w-fit h-fit md:hidden block text-4xl">
             <HiOutlineBars3CenterLeft />
           </div>
-          <div className="md:block hidden">
+          <div className="md:flex items-center hidden">
             <ul className="flex items-center gap-x-6 text-lg capitalize font-medium text-black">
               {navData.map((navMenu) => (
                 <Link to={navMenu.path}>
                   <li key={navMenu.id}>{navMenu.label}</li>
+                </Link>
+              ))}
+            </ul>
+            <ul className="text-2xl ml-8 gap-x-6 items-center flex">
+              {infoData.map((info) => (
+                <Link to={info.path}>
+                  <li key={info.id}>
+                    <info.icon />
+                  </li>
                 </Link>
               ))}
             </ul>

@@ -1,5 +1,5 @@
 
-const DashboardLayout = () => {
+const DashboardLayout:React.FC = () => {
   return (
     <div>Dashboard</div>
   )
