@@ -63,5 +63,5 @@ html{
 }
 
 .container{
-  @apply max-w-container mx-auto px-3
+  @apply max-w-container mx-auto 
 }

@@ -1,9 +1,11 @@
+import Banner from "@/components/screen/home/Banner";
 
-
-const Home:React.FC = () => {
+const Home: React.FC = () => {
   return (
-    <div></div>
-  )
-}
+    <>
+      <Banner />
+    </>
+  );
+};
 
-export default Home
+export default Home;
