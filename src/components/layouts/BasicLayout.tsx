@@ -5,7 +5,7 @@ import Navbar from "../shared/Navbar"
 const BasicLayout: React.FC = () => {
   return (
     <>
-    <header>
+    <header className="relative">
       <Navbar/>
     </header>
     <main>
