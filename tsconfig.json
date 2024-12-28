@@ -6,8 +6,12 @@
   ],
   "compilerOptions": {
     "baseUrl": ".",
+    "typeRoots": ["node_modules/@types"],
+    "moduleResolution": "node",
+    "esModuleInterop": true,
     "paths": {
       "@/*": ["./src/*"]
     }
-  }
+  },
+  
 }
